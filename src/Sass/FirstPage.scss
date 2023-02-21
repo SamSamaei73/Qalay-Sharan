@@ -1,0 +1,702 @@
+
+@import "Utilities";
+
+.Firstpage{
+    width: 100%;
+    @include FlexColumn;
+}
+
+.Header{
+    width: 100%;
+    height: 7rem;
+    @include FlexCenter;
+    padding: 0 3rem;
+    justify-content: space-between;
+    direction: rtl;
+    z-index: 2;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+
+    .rightTop{
+        width: 25rem;
+        height: 70%;
+        @include FlexCenter;
+        justify-content: space-between;
+        padding: 0 1rem;
+        box-shadow: -11px 0px 4px -10px rgba(0,0,0,0.1);
+        .Logo{
+            display: none;
+          }
+         .Language{
+            width: 10rem;
+            height: 100%;
+            @include FlexCenter;
+            select{
+                width: 90%;
+                height: 3rem;
+                direction: ltr;
+                background-color: #02005E;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 0 1rem;
+            }
+        }
+        .socialMedia{
+            width: 8rem;
+            height: 100%;
+            @include FlexCenter;
+            justify-content: space-evenly;
+
+            a{
+                width: 1.5rem;
+                height: 1.5rem;
+                position: relative;
+                text-decoration: none;
+                @include FlexCenter;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .leftTop{
+        width: 50%;
+        height: 100%;
+        @include FlexCenter;
+        justify-content: space-between;
+        padding: 0 1rem;
+        .Logo{
+          width: 7.5rem;
+          height: 6rem;
+          position: relative;
+          @include FlexCenter;
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+          }
+        }
+        .lists{
+            width: 80%;
+            @include FlexCenter;
+            justify-content: center;
+            direction: ltr;
+            a{
+                text-decoration: none;
+                color: black;
+                width: 7rem;
+                font-size: 17px;
+                height: 4rem;
+                @include FlexCenter;
+                
+                &:hover{
+                    color: blue;
+                }
+            }
+            .bordShadow{
+             box-shadow: -11px 0px 4px -10px rgba(0,0,0,0.1);
+
+            }
+        }
+    }
+}
+
+.Navbar{
+    width: 100%;
+    min-height: 100vh;
+    @include FlexCenter;
+    position: relative;
+    background-color: saddlebrown;
+    video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+    .shadowNav{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(21, 21, 83, 0.629);
+        position: absolute;
+        @include FlexCenter;
+        flex-direction: column;
+        color: #fff;
+        
+        h3{
+            font-size: 35px;
+            margin-bottom: 1rem;
+            animation-name: anime;
+            animation-duration: 2s;
+        }
+        h1{
+            font-size: 120px;
+            margin-bottom: 2rem;
+            animation-name: anime2;
+            animation-duration: 2s;
+        }
+        h2{
+            font-size: 30px;
+            animation-name: anime3;
+            animation-duration: 2s;
+        }
+    }
+}
+
+@keyframes anime {
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 35px;
+    }
+}
+@keyframes anime2 {
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 120px;
+    }
+}
+@keyframes anime3 {
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 30px;
+    }
+}
+
+.WeAre{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    @include FlexColumn;
+    flex-direction: column;
+    padding: 2rem;
+    h1 {
+        margin: 2rem 0 3rem 0;
+        font-size: 40px;
+    }
+    .Info{
+        width: 90%;
+        height: 80%;
+        @include FlexCenter;
+        flex-wrap: wrap;
+        .Icons{
+
+            width: 36rem;
+            height: 30rem;
+            @include FlexCenter;
+            margin: 5px;
+            flex-wrap: wrap;
+            .item{
+                width: 50%;
+                height: 50%;
+                border: 0.1px solid rgba(1, 2, 68, 0.156);
+                @include FlexCenter;
+                flex-direction: column;
+                padding: 2rem;
+                img {
+                    width: 3rem;
+                    height: 3rem;
+                }
+                h3{
+                    color: #002BC1;
+                    margin-top: 1rem;
+                    line-height: 30px;
+                }
+
+                &:nth-child(1){
+                    border-top: none;
+                    border-left: none;
+                }
+                &:nth-child(2){
+                    border-top: none;
+                    border-right: none;
+                }
+                &:nth-child(3){
+                    border-bottom: none;
+                    border-left: none;
+                    
+                }
+                &:nth-child(4){
+                    border-bottom: none;
+                    border-right: none;                }
+            }
+        }
+        .Description{
+            width: 35%;
+            height: 30rem;
+            margin: 5px;
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            text-align:justify;
+            padding: 0 2%;
+            position: relative;
+            h3{
+                line-height: 37px;
+                font-weight: 400;
+                width: 100%;
+                height: 25rem;
+                overflow: hidden;
+            }
+            .btnPlace{
+                width: 100%;
+                display: flex;
+                position: absolute;
+                bottom: 2rem;
+                button{
+                    padding: 10px;
+                    width: 60%;
+                    height: 3rem;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #1128FD;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+    }
+    .Points{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.EveryThing{
+    width: 100%;
+    @include FlexColumn;
+    background-color: #1E1E1E;
+    padding: 2rem;
+    color: #fff;
+    h1 {
+        font-size: 40px;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+    .section{
+        width: 80%;
+        height: 30rem;
+        @include FlexCenter;
+        img {
+            width: 50%;
+            height: 100%;
+        }
+        .info{
+            width: 50%;
+            height: 100%;
+            @include FlexCenter;
+            flex-direction: column;
+            padding: 4rem;
+            overflow: hidden;
+            h1 {
+                width: 100%;
+                text-align: left;
+            }
+            h3 {
+                text-align: justify;
+                line-height: 40px;
+            }
+        }
+
+    }
+}
+
+.FirstProducts{
+    width: 100%;
+    @include FlexCenter;
+    position: relative;
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    .Points{
+        position: absolute;
+        left: 5%;
+        top: 0;
+    }
+    h1 {
+        margin-top: 2rem;
+        font-size: 45px;
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-size: 30px;
+        margin-bottom: 3rem;
+    }
+    .slider{
+        width: 90%;
+        height: 35rem;
+        .MainSlide{
+            height: 100%;
+            position: relative;
+
+            .slider-navigation-container{
+                background-color: #002BC1 !important;
+                position: absolute !important;
+                bottom: 0 !important;
+                top: 96% !important;
+                left: 46% !important;
+                width: 6rem;
+                height: 2.4rem;
+                border-radius: 5px;
+                .slider-navigation-left__default{
+                  border: solid #fff ;
+                  border-width: 0 3px 3px 0;
+                }
+                .slider-navigation-right__default{
+                  border: solid #fff ;
+                  border-width: 0 3px 3px 0;
+                }
+            }
+            
+            
+
+            .item{
+                height: 90%;
+                width: 10rem;
+                @include FlexCenter;
+                padding: 0.5rem;
+                margin-bottom: 2rem;
+                .mainItem{
+                  background-color: #F1F1F1;
+                  width: 100%;
+                  height: 100%;
+                  padding: 1rem;
+                  @include FlexColumn;
+                  flex-direction: column;
+                  .placeImg{
+                    width: 100%;
+                    height: 13rem;
+                    background-color: #1128FD;
+                    @include FlexCenter;
+                    position: relative;
+                    margin-bottom: 10px;
+                  }
+                  h2{
+                    width: 100%;
+                    text-align: left;
+                    margin: 10px 0;
+                  }
+                  h4{
+                    width: 100%;
+                    height: 7.2rem;
+                    text-align: justify;
+                    line-height: 30px;
+                    font-weight: 300;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                  }
+                  button{
+                    width: 100%;
+                    height: 3rem;
+                    margin-top: 1.2rem;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #1128FD;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 18px;
+                  }
+ 
+                }
+               
+            }
+        }
+        
+    }
+}
+
+.Footer{
+    width: 100%;
+    height: 33rem;
+    @include FlexCenter;
+    margin-top: 2rem;
+    background-color: #011661;
+    padding: 3rem 5rem;
+    .infoAddress{
+        width: 50%;
+        height: 100%;
+        @include FlexColumn;
+        color: #fff;
+        h1{
+            width: 100%;
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+        h2{
+            width: 100%;
+            text-align: left;
+            font-weight: 400;
+            margin-bottom: 1rem;
+
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+            text-align: left;
+            &:nth-child(3){
+                margin-bottom: 3rem;
+            }
+            &:nth-child(5){
+                margin-bottom: 3rem;
+            }
+            &:nth-child(6){
+                margin-bottom: 1rem;
+            }
+            &:hover {
+                color: yellow;
+            }
+        }
+        .social{
+            width: 100%;
+            height: 3rem;
+            @include FlexCenter;
+            justify-content: left;
+            margin-top: 1rem;
+            .box{
+                width: 2rem;
+                height: 2rem;
+                background-color: #0040DD;
+                border-radius: 7px;
+                margin: 0 10px;
+                cursor: pointer;
+                position: relative;
+                @include FlexCenter;
+                img {
+                    position: absolute;
+                    width: 90%;
+                    height: 90%;
+
+                }
+            }
+        }
+
+    }
+    .Map{
+        width: 40%;
+        height: 100%;
+        background-color: rgb(0, 255, 145);
+
+    }
+}
+
+
+/* /////////////////////////////////////////////////responsive////////////////////////////////////////////////// */
+@media (max-width: 750px) {
+    .Header{
+        width: 100%;
+        height: 7rem;
+        flex-direction: column;
+        padding: 10px 1rem;
+
+        .rightTop{
+            width: 100%;
+            height: 50%;
+            padding: 0 ;
+            box-shadow: none;
+
+            .Logo{
+                width: 4.5rem;
+              height: 3.5rem;
+              @include FlexCenter;
+              position: relative;
+              img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+              }
+              }
+             .Language{
+                select{
+                    height: 1.5rem;
+                    width: 8rem;
+                }
+            }
+        }
+        .leftTop{
+            width: 100%;
+            .Logo{
+              display: none;
+            }
+            .lists{
+                width: 100%;
+                margin-top:10px;
+                a{
+                    width: 6rem;
+                    font-size: 17px;
+                    height: 3rem;
+                }
+               
+            }
+        }
+    }
+    .Navbar{
+        .shadowNav{   
+            h3{
+                font-size: 30px;
+                animation-name: anime4;
+            animation-duration: 2s;
+            }
+            h1{
+                font-size: 60px;
+                animation-name: anime5;
+            animation-duration: 2s;
+            }
+            h2{
+                font-size: 17px;
+                line-height: 30px;
+                animation-name: anime6;
+            animation-duration: 2s;
+
+            }
+        }
+    }
+    .WeAre{
+        h1 {
+            font-size: 20px;
+        }
+        .Info{
+            width: 100%;
+            .Icons{
+    
+                width: 100rem;
+                height: 30rem;
+                @include FlexCenter;
+                margin: 5px;
+                flex-wrap: wrap;
+                .item{
+                    width: 50%;
+                    height: 50%;
+                    border: 0.1px solid rgba(1, 2, 68, 0.156);
+                    @include FlexCenter;
+                    flex-direction: column;
+                    padding: 2rem;
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                    h3{
+                        color: #002BC1;
+                        margin-top: 1rem;
+                        line-height: 30px;
+                    }
+    
+                    &:nth-child(1){
+                        border-top: none;
+                        border-left: none;
+                    }
+                    &:nth-child(2){
+                        border-top: none;
+                        border-right: none;
+                    }
+                    &:nth-child(3){
+                        border-bottom: none;
+                        border-left: none;
+                        
+                    }
+                    &:nth-child(4){
+                        border-bottom: none;
+                        border-right: none;                }
+                }
+            }
+            .Description{
+                width: 100%;
+               
+                h3{
+                    line-height: 27px;
+                }
+                .btnPlace{
+                    position: relative;
+                    button{
+                        width: 100%;
+                    }
+                    
+                }
+            }
+        }
+        .Points{
+           width: 6rem;
+        }
+    }
+    .EveryThing{
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;        }
+        .section{
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+            img {
+                width: 90%;
+                height: 50%;
+            }
+            .info{
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+                h1 {
+                    width: 100%;
+                    text-align: left;
+                }
+                h3 {
+                    text-align: justify;
+                    line-height: 30px;
+                    font-size: 17px;
+                    font-weight: 300;
+                }
+            }
+    
+        }
+    }
+
+    
+}
+
+@keyframes anime4 {
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 30px;
+    }
+}
+@keyframes anime5 {
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 60px;
+    }
+}
+@keyframes anime6 {
+    from{
+        font-size: 10px;
+    }
+    to{
+        font-size: 17px;
+    }
+}
