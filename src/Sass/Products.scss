@@ -1,0 +1,187 @@
+@import "Utilities";
+
+.MainProducts{
+    width: 100%;
+    @include FlexColumn;
+}
+
+.NavProducts{
+    width: 100%;
+    min-height: 80vh;
+    @include FlexCenter;
+    position: relative;
+    background:  url(../img/DSC_7306.jpg) no-repeat center center/cover;
+    position: relative;
+    z-index:1; 
+
+    .shadow{
+        width: 100%;
+        height: 100%;
+        background-color: #53535364;
+        @include FlexCenter;
+        position: absolute;
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 40px;
+            margin-top: 5rem;
+        }
+        pre {
+            color: #fff;
+            font-size: 40px;
+            margin: 0 20px;
+            margin-top: 5rem;
+
+        }
+    }
+}
+
+.ProLists{
+    width: 100%;
+    @include FlexColumn;
+    padding: 3rem 1rem;
+    position: relative;
+    .PointPro{
+        position: absolute;
+        &:nth-child(1){
+            transform: rotate(-20deg);
+            right: 0;
+            top: 0;
+        }
+        &:nth-child(2){
+            transform: rotate(20deg);
+            left: 0;
+            top: 0;
+        }
+        &:nth-child(3){
+            left: 0;
+            bottom: 0;
+        }
+   
+    }
+    h1{
+        font-size: 40px;
+        margin-bottom: 3rem;
+    }
+    .searchPlace{
+        width: 85%;
+        height: 4rem;
+        padding: 0 45px;
+        @include FlexCenter;
+        justify-content: left;
+        margin-bottom: 1rem;
+        .SearchPut{
+            width: 30%;
+            height: 2.5rem;
+            @include FlexCenter;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.149);
+            img {
+                width: 10%;
+                padding: 10px;
+            }
+
+            input{
+                width: 90%;
+                height: 100%;
+                border: none;
+                font-size: 17px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+    .MainProductsList{
+        width: 85%;
+        @include FlexCenter;
+        padding: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .Box{
+            width: 18rem;
+            height: 30rem;
+            background-color: #F1F1F1;
+            @include FlexColumn;
+            padding: 1rem;
+            position: relative;
+            border-radius: 5px;
+            margin: 20px;
+            img{
+                width: 100%;
+                height: 12rem;
+                border-radius: 5px;
+            }
+            h2{
+                margin-top: 20PX;
+                width: 100%;
+                text-align: left;
+                font-size: 22px;
+            }
+            h4{
+                width: 100%;
+                height: 6.5rem;
+                text-align: justify;
+                display: -webkit-box;
+               -webkit-line-clamp: 4;
+               -webkit-box-orient: vertical;
+                 overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: 300;
+                margin-top: 20px;
+                line-height: 28px;
+
+            }
+            button{
+                width: 100%;
+                height: 3rem;
+                margin-top: 1.2rem;
+                border-radius: 5px;
+                border: none;
+                background-color: #1128FD;
+                color: #fff;
+                cursor: pointer;
+                font-size: 18px;
+              }
+        }
+
+    }
+    .Pagination{
+        width: 80%;
+        @include FlexCenter;
+        height: 4rem;
+        .NumPage{
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid #1128FD;
+            @include FlexCenter;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 0 10px;
+            color: #1128FD;
+        }
+        .active{
+            background-color: #1128FD;
+            color: #fff;
+        }
+
+    }
+}
+
+
+
+/* /////////////////////////////////////////////////responsive////////////////////////////////////////////////// */
+@media (max-width: 750px) {
+    .NavProducts{
+        .shadow{
+            a{
+                font-size: 25px;
+            }
+            pre {
+                font-size: 25px;   
+            }
+        }
+    }
+}

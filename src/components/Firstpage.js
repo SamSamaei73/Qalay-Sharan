@@ -6,6 +6,8 @@ import WeAre from './FirstPage/WeAre';
 import EveryThing from './FirstPage/EveryThing';
 import FirstProducts from './FirstPage/FirstProducts';
 import Footer from './FirstPage/Footer';
+import Footer2 from './FirstPage/Footer2';
+import ScrollToTop from "react-scroll-up";
 
 const Firstpage = () => {
   return (
@@ -16,6 +18,10 @@ const Firstpage = () => {
       <EveryThing/>
       <FirstProducts/>
       <Footer/>
+      <Footer2/>
+      <ScrollToTop showUnder={120} style={{ marginBottom: "3rem" }}>
+            <span className="scrollUp">▲</span>
+       </ScrollToTop>
     </div>
   )
 }
