@@ -30,7 +30,7 @@ const Header = () => {
         <div className="Language">
           <select className="custom-select" onChange={changeLanguageHandler}>
             <option value="en"> English 🇬🇧 </option>
-            <option value="fa">فارسی 🇮🇷 </option>
+            <option value="fa">عربی 🇮🇶 </option>
           </select>
         </div>
         <NavLink className="Logo" to="/">

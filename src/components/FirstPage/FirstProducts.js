@@ -2,6 +2,7 @@ import React from 'react';
 import "use-slider/lib/slider.min.css";
 import useSlider from "use-slider";
 import Points from "../../img/image624.png";
+import PhotoPro from "../../img/Frame39210.jpg";
 
 
 const FirstProducts = () => {
@@ -29,7 +30,79 @@ const FirstProducts = () => {
                     <div className='item'>
                     <div className="mainItem">
                         <div className="placeImg">
-
+                            <img src={PhotoPro} alt="PhotoPro"/>
+                        </div>
+                        <h2>BITUMEN 40/50</h2>
+                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
+                        <button>Read more</button>
+                    </div>
+                    </div>
+            
+                    
+                    <div className='item'>
+                    <div className="mainItem">
+                        <div className="placeImg">
+                            <img src={PhotoPro} alt="PhotoPro"/>
+                        </div>
+                        <h2>BITUMEN 40/50</h2>
+                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
+                        <button>Read more</button>
+                    </div>
+                    </div>
+            
+                    
+                    <div className='item'>
+                    <div className="mainItem">
+                        <div className="placeImg">
+                            <img src={PhotoPro} alt="PhotoPro"/>
+                        </div>
+                        <h2>BITUMEN 40/50</h2>
+                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
+                        <button>Read more</button>
+                    </div>
+                    </div>
+            
+                    
+                    <div className='item'>
+                    <div className="mainItem">
+                        <div className="placeImg">
+                            <img src={PhotoPro} alt="PhotoPro"/>
+                        </div>
+                        <h2>BITUMEN 40/50</h2>
+                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
+                        <button>Read more</button>
+                    </div>
+                    </div>
+            
+                    
+                    <div className='item'>
+                    <div className="mainItem">
+                        <div className="placeImg">
+                            <img src={PhotoPro} alt="PhotoPro"/>
+                        </div>
+                        <h2>BITUMEN 40/50</h2>
+                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
+                        <button>Read more</button>
+                    </div>
+                    </div>
+            
+                    
+                    <div className='item'>
+                    <div className="mainItem">
+                        <div className="placeImg">
+                            <img src={PhotoPro} alt="PhotoPro"/>
+                        </div>
+                        <h2>BITUMEN 40/50</h2>
+                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
+                        <button>Read more</button>
+                    </div>
+                    </div>
+            
+                    
+                    <div className='item'>
+                    <div className="mainItem">
+                        <div className="placeImg">
+                            <img src={PhotoPro} alt="PhotoPro"/>
                         </div>
                         <h2>BITUMEN 40/50</h2>
                         <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
@@ -38,64 +111,8 @@ const FirstProducts = () => {
                     </div>
             
 
-                    <div className='item'>
-                    <div className="mainItem">
-                        <div className="placeImg">
-
-                        </div>
-                        <h2>BITUMEN 40/50</h2>
-                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
-                        <button>Read more</button>
-                    </div>
-                    </div>
             
 
-                    <div className='item'>
-                    <div className="mainItem">
-                        <div className="placeImg">
-
-                        </div>
-                        <h2>BITUMEN 40/50</h2>
-                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
-                        <button>Read more</button>
-                    </div>
-                    </div>
-            
-
-                    <div className='item'>
-                    <div className="mainItem">
-                        <div className="placeImg">
-
-                        </div>
-                        <h2>BITUMEN 40/50</h2>
-                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
-                        <button>Read more</button>
-                    </div>
-                    </div>
-            
-
-                    <div className='item'>
-                    <div className="mainItem">
-                        <div className="placeImg">
-
-                        </div>
-                        <h2>BITUMEN 40/50</h2>
-                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
-                        <button>Read more</button>
-                    </div>
-                    </div>
-            
-
-                    <div className='item'>
-                    <div className="mainItem">
-                        <div className="placeImg">
-
-                        </div>
-                        <h2>BITUMEN 40/50</h2>
-                        <h4>A grade of 40/50 bitumen means the penetration value is in the range 40 to 50 at standard test conditions</h4>
-                        <button>Read more</button>
-                    </div>
-                    </div>
             
 
                     <div className='item'>

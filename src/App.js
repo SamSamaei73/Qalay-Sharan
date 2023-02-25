@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
+import ProductsPage from "./components/ProductsPage";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -39,6 +40,7 @@ function App() {
               <Route exact path="/" element={<Firstpage />} />
               <Route exact path="/AboutUs" element={<AboutUs />} />
               <Route exact path="/Products" element={<Products />} />
+              <Route exact path="/ProductsPage" element={<ProductsPage />} />
             </Routes>
           </Router>
         </div>

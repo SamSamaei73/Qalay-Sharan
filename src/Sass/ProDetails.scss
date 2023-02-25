@@ -1,0 +1,159 @@
+@import "Utilities";
+
+.ProductsPage{
+    width: 100%;
+    @include FlexColumn ;
+
+}
+
+.NavDetail{
+    width: 100%;
+    min-height: 80vh;
+    @include FlexCenter;
+    position: relative;
+    background:  url(../img/CHL00006.jpg) no-repeat center center/cover;
+    position: relative;
+
+    .shadow{
+        width: 100%;
+        height: 100%;
+        background-color: #53535364;
+        @include FlexCenter;
+        position: absolute;
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 40px;
+            margin-top: 5rem;
+        }
+        pre {
+            color: #fff;
+            font-size: 40px;
+            margin: 0 20px;
+            margin-top: 5rem;
+
+        }
+    }
+}
+
+.MainDetails{
+    width: 90%;
+    padding: 2rem;
+    @include FlexCenter;
+    margin-bottom: 2rem;
+    .InfoDetails{
+        width: 60%;
+        height: 30rem;
+        @include FlexColumn;
+        padding: 2rem;
+        justify-content: center;
+        .name{
+            width: 100%;
+            text-align: right;
+            margin-bottom: 3rem;
+        }
+        .Price{
+            width: 100%;
+            @include FlexCenter;
+            justify-content: right;
+            .PriceNum{
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                padding: 10px 40px;
+            }
+        }
+       
+    }
+    .Imgpro{
+        width: 38%;
+        height: 30rem;
+        position: relative;
+        @include FlexCenter;
+        padding: 1rem;
+        img {
+            width: 100%;
+            height: 25rem;
+        }
+
+    }
+}
+
+.TabDetails{
+    width: 100%;
+    padding: 2rem;
+    @include FlexCenter;
+    position: relative;
+    .TabPlace{
+        width: 80%;
+        height:30rem;
+        border-radius: 5px;
+        box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;  ;
+        @include FlexCenter;
+        padding: 4rem;
+        .HeadTab{
+            width: 100%;
+
+            .mr-3{
+                font-size: 22px;
+            }
+            .mt-3{
+                height: 20rem;
+                width: 100%;
+                text-align: left;
+                padding: 1rem;
+                margin-top: 1rem;
+                overflow: scroll;
+                line-height: 40px;
+                font-size: 20px;
+                font-weight: 300;
+}
+            
+        }
+    }
+}
+.rb-tabs-items{
+    border-bottom: 1px solid #9f2a2a00 !important; 
+}
+/* /////////////////////////////////////////////////responsive////////////////////////////////////////////////// */
+@media (max-width: 750px) {
+    .MainDetails{
+        flex-direction: column;
+        .InfoDetails{
+            height: 15rem;     
+            justify-content: center;
+            order: 2;
+            .name{
+                text-align: center;
+            }
+            .Price{
+                justify-content: center;      
+            } 
+        }
+        .Imgpro{
+            width: 100%;
+            height: 20rem;
+            order: 1;
+            img {
+                height: 18rem;
+            }
+        }
+    }
+    .TabDetails{
+     
+        .TabPlace{
+            width: 100%;
+            padding: 2rem;
+            .HeadTab{
+                .mr-3{
+                    font-size: 22px;
+                }
+                .mt-3{
+                    font-size: 17px;
+                    line-height: 25px;
+    }
+                
+            }
+        }
+    }
+}
