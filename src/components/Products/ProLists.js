@@ -6,7 +6,7 @@ import Points from '../../img/image624.png';
 
 const ProLists = () => {
   return (
-    <div className='ProLists'>
+    <div id="container" className='ProLists'>
         <img className='PointPro' src={Points} alt="Points" />
         <img className='PointPro' src={Points} alt="Points" />
         <img className='PointPro' src={Points} alt="Points" />
