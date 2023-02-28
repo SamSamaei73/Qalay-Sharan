@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
 import ProductsPage from "./components/ProductsPage";
+import ScrollToTop from "./components/Tools/ScrollTop";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -42,6 +43,7 @@ function App() {
               <Route exact path="/Products" element={<Products />} />
               <Route exact path="/ProductsPage" element={<ProductsPage />} />
             </Routes>
+            <ScrollToTop/>
           </Router>
         </div>
       </div>

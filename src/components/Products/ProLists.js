@@ -2,6 +2,8 @@ import React from 'react';
 import Photo from '../../img/IMG_20230206_143545.png';
 import SearchPhoto from '../../img/Vector.png';
 import Points from '../../img/image624.png';
+import { NavLink } from "react-router-dom";
+
 
 
 const ProLists = () => {
@@ -24,7 +26,7 @@ const ProLists = () => {
                 <img src={Photo} alt="Photo" />
                 <h2>BITUMEN 40/50</h2>
                 <h4>A grade of 40/50 bitumen means the penetration value is intherange40to50at standard test conditions test for overrflow dsdfsf</h4>
-                <button>Read More</button>
+                <NavLink to="/ProductsPage" className="InfoProData" >Read More</NavLink>
             </div>
 
             <div className="Box">
