@@ -1,0 +1,233 @@
+@import "Utilities";
+
+.Login{
+    width: 100%;
+    min-height: 100vh;
+    @include FlexCenter;
+    padding: 1rem;
+    position: relative;
+
+    img{
+        position: absolute;
+        top: 15px;
+    }
+
+    .BoxLogin{
+        width: 25rem;
+        height: 25rem;
+        background-color: #011661;
+        border-radius: 10px;
+        box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+        @include FlexColumn;
+        padding: 2rem;
+        color: #fff;
+        .boxItem{
+            width: 100%;
+            height: 5rem;
+            margin-top: 2rem;
+          @include FlexColumn;
+          h4{
+            width: 100%;
+            text-align: left;
+          }
+          input{
+            width: 100%;
+            height: 2.8rem;
+            margin-top: 15px;
+            padding: 0 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            &:focus{
+                outline: none;
+            }
+
+          }
+
+        }
+        .btn{
+            width: 100%;
+            margin-top: 2rem;
+            @include FlexCenter;
+            button{
+                padding: 13px;
+                width: 10rem;
+                border: none;
+                box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: goldenrod;
+                color: #fff;
+                font-size: 17px;
+            }
+        }
+    }
+}
+.Cpanel{
+    width: 100%;
+    padding: 1rem;
+    @include FlexColumn;
+    position: relative;
+ 
+    .header{
+        width: 100%;
+        position: relative;
+        @include FlexCenter;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .listPage{
+            @include FlexCenter;
+            justify-content: space-between;
+            margin-right: 2rem;
+            a{
+                text-decoration: none;
+                color: #01208D;
+                margin: 0 20px;
+                height: 2rem;
+                &:hover{
+                border-bottom: 2px solid #01208D;
+
+                }
+            }
+            .active{
+                border-bottom: 2px solid #01208D;
+            }
+        }
+    }
+    .mainPlace{
+        width: 90%;
+        padding: 2rem;
+        background-color: #7190FF;
+        border-radius: 10px;
+        @include FlexColumn;
+        align-items: self-start;
+        color: #01208D;
+        margin-bottom: 2rem;
+        h1{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .box{
+            width: 50%;
+            @include FlexCenter;
+            justify-content: space-between;
+            height: 5rem;
+
+            input{
+                width: 25rem;
+                height: 2.5rem;
+                margin-left: 1rem;
+                border: none;
+                border-radius: 5px;
+                padding: 0 1rem;
+                font-size: 20px;
+            }
+
+        }
+        .boxText{
+            width: 80%;
+            @include FlexCenter;
+            justify-content: space-between;
+
+            textarea{
+                width: 45rem;
+                height: 10rem;
+                margin-left: 1rem;
+                border: none;
+                border-radius: 5px;
+                padding: 0 1rem;
+                font-size: 20px;
+            }
+
+        }
+        .btn{
+            width: 100%;
+            @include FlexCenter;
+            margin-top: 2rem;
+            button{
+                padding: 10px;
+                width: 20rem;
+                font-size: 17px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: goldenrod;
+              box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+                color: #01208D;
+            }
+        }
+    }
+}
+
+.TableProduct{
+    width: 100%;
+    padding: 1rem;
+    @include FlexColumn;
+    position: relative;
+    .header{
+        width: 100%;
+        position: relative;
+        @include FlexCenter;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .listPage{
+            @include FlexCenter;
+            justify-content: space-between;
+            margin-right: 2rem;
+            a{
+                text-decoration: none;
+                color: #01208D;
+                margin: 0 20px;
+                height: 2rem;
+                &:hover{
+                border-bottom: 2px solid #01208D;
+
+                }
+            }
+            .active{
+                border-bottom: 2px solid #01208D;
+            }
+        }
+    }
+    .MainTable{
+        width: 90%;
+        @include FlexCenter;
+        padding: 2rem;
+        margin-top: 2rem;
+        table {
+            width: 100%;
+            th{
+                background-color: #7190FF;
+                width: 10rem;
+                height: 4rem;
+                color: #fff;
+                &:nth-child(1){
+                    width: 2rem !important;
+
+                }
+            }
+            td{
+                width: 10rem;
+                height: 4rem;
+                &:nth-child(1){
+                    width: 2rem !important;
+
+                }
+                button{
+                    padding: 5px;
+                    width: 7rem;
+                    border: none;
+                    background-color: red;
+                    color: #fff;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+    }
+}

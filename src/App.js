@@ -10,6 +10,9 @@ import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
 import ProductsPage from "./components/ProductsPage";
 import ScrollToTop from "./components/Tools/ScrollTop";
+import Login from "./components/Cpanel/Login";
+import Cpanel from "./components/Cpanel/Cpanel";
+import TableProduct from "./components/Cpanel/TableProduct";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -42,6 +45,9 @@ function App() {
               <Route exact path="/AboutUs" element={<AboutUs />} />
               <Route exact path="/Products" element={<Products />} />
               <Route exact path="/ProductsPage" element={<ProductsPage />} />
+              <Route exact path="/Login" element={<Login />} />
+              <Route exact path="/Cpanel" element={<Cpanel />} />
+              <Route exact path="/TableProduct" element={<TableProduct />} />
             </Routes>
             <ScrollToTop/>
           </Router>
