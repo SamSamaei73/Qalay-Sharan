@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.117af0b2.css",
-    "main.js": "/static/js/main.18035f49.js",
+    "main.css": "/static/css/main.fe9938bf.css",
+    "main.js": "/static/js/main.da0f0cca.js",
     "static/media/Sharan.mp4": "/static/media/Sharan.557d3651742d29bb55b3.mp4",
-    "static/media/DSC_7306.jpg": "/static/media/DSC_7306.6b664ebce4887d212805.jpg",
-    "static/media/DJI_0104.jpg": "/static/media/DJI_0104.985d72bc72b6dfddfddc.jpg",
-    "static/media/CHL00006.jpg": "/static/media/CHL00006.f91f87ed82651980e0cf.jpg",
     "static/media/IMG_7648.png": "/static/media/IMG_7648.33f815dd6c5d49111ea5.png",
     "static/media/Inter.ttf": "/static/media/Inter.aadb65ac45347ff46699.ttf",
+    "static/media/CHL00006.jpg": "/static/media/CHL00006.fd5686224471e37a0033.jpg",
+    "static/media/DJI_0104.jpg": "/static/media/DJI_0104.a3f264271b85f88bdab8.jpg",
+    "static/media/DSC_7306.jpg": "/static/media/DSC_7306.de8ae828409889e99472.jpg",
     "static/media/IMG_20230206_143551.png": "/static/media/IMG_20230206_143551.44034b7baacf20b6079a.png",
     "static/media/IMG_20230206_143548.png": "/static/media/IMG_20230206_143548.8df2f3da3371acdf5b46.png",
     "static/media/IMG_20230206_143545.png": "/static/media/IMG_20230206_143545.2ccdd1886bafd9a741b4.png",
+    "static/media/map.png": "/static/media/map.62541fd664e96e797c27.png",
     "static/media/Frame39210.jpg": "/static/media/Frame39210.f85088844598011aa286.jpg",
     "index.html": "/index.html",
-    "main.117af0b2.css.map": "/static/css/main.117af0b2.css.map",
-    "main.18035f49.js.map": "/static/js/main.18035f49.js.map"
+    "main.fe9938bf.css.map": "/static/css/main.fe9938bf.css.map",
+    "main.da0f0cca.js.map": "/static/js/main.da0f0cca.js.map"
   },
   "entrypoints": [
-    "static/css/main.117af0b2.css",
-    "static/js/main.18035f49.js"
+    "static/css/main.fe9938bf.css",
+    "static/js/main.da0f0cca.js"
   ]
 }

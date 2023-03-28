@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Linkedin from "../../img/icons8-linkedin-circled-50.png";
+import Linkedin from "../../img/icons8-circled-envelope-50.png";
 import Whatsapp from "../../img/icons8-whatsapp-50.png";
 import Instagram from "../../img/icons8-instagram-48.png";
 import Logo from "../../img/logo-qalay.png";
@@ -37,10 +37,10 @@ const Header = () => {
           <img src={Logo} alt="Logo" />
         </NavLink>
         <div className="socialMedia">
-          <a href="">
+          <a href="mailto:info@qalaybitumen.com">
             <img src={Linkedin} alt="Linkedin" />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/qalaysharan.co/">
             <img src={Instagram} alt="Instagram" />
           </a>
           <a href="">
