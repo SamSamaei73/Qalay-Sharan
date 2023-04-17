@@ -21,7 +21,7 @@ const Products = () => {
          <div className="Icons">
               <div className="items">
                  <img src={Photo1} alt="Photo1" />
-                 <h2>produces 1000 metric tons of bitumen per day</h2>
+                 <h2>produces 500 metric tons of bitumen per day</h2>
               </div>
               <div className="items">
                  <img src={Photo2} alt="Photo2" />
@@ -33,7 +33,7 @@ const Products = () => {
               </div>
               <div className="items">
                  <img src={Photo4} alt="Photo4" />
-                 <h2>production capacity is 240,000 units per month</h2>
+                 <h2>production capacity is 15,000 units per month</h2>
               </div>
          </div>
     </div>

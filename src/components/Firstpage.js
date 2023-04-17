@@ -3,7 +3,6 @@ import '../Sass/FirstPage.scss';
 import Header from './FirstPage/Header';
 import Navbar from './FirstPage/Navbar';
 import WeAre from './FirstPage/WeAre';
-import EveryThing from './FirstPage/EveryThing';
 import FirstProducts from './FirstPage/FirstProducts';
 import Footer from './FirstPage/Footer';
 import Footer2 from './FirstPage/Footer2';
@@ -15,7 +14,7 @@ const Firstpage = () => {
       <Header/>
       <Navbar/>
       <WeAre/>
-      <EveryThing/>
+      {/* <EveryThing/> */}
       <FirstProducts/>
       <Footer/>
       <Footer2/>

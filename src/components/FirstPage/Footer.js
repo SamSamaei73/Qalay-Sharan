@@ -14,15 +14,16 @@ const Footer = () => {
         <h2>Qalay Sharan Bitumen Factory :</h2>
         <a href="">In front of Lanaz , Goyer Ave . Erbil , Iraq</a>
         <a href="tel:+9647503939892">+964 750 393 9892</a>
-        <a href="tel:+9647705717755">+964 770 571 7755</a>
+        <a href="tel:+9647506353200">+964 750 635 3200</a>
+        <a href="tel:+989120884939">+98 912 088 4939</a>
         <div className="social">
-          <a href="" className="box">
+          <a href="https://telegram.me/isaelmjou" className="box">
             <img src={Telegram} alt="Telegram" />
           </a>
           <a href="https://www.instagram.com/qalaysharan.co/" className="box">
             <img src={Instagram} alt="Instagram" />
           </a>
-          <a href="" className="box">
+          <a href="whatsapp://send?text=Hello Qalay!&phone=+989120884939" className="box">
             <img src={Whats} alt="Whats" />
           </a>
         </div>

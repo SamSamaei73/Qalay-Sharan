@@ -43,7 +43,7 @@ const Header = () => {
           <a href="https://www.instagram.com/qalaysharan.co/">
             <img src={Instagram} alt="Instagram" />
           </a>
-          <a href="">
+          <a href="whatsapp://send?text=Hello Qalay!&phone=+989120884939">
             <img src={Whatsapp} alt="Whatsapp" />
           </a>
         </div>

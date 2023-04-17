@@ -6,6 +6,8 @@ import Description from './AboutUs/Description';
 import Products from './AboutUs/Products';
 import Footer from './FirstPage/Footer';
 import Footer2 from './FirstPage/Footer2';
+import EveryThing from './FirstPage/EveryThing';
+
 
 const AboutUs = () => {
   return (
@@ -14,6 +16,7 @@ const AboutUs = () => {
         <NavAbout/>
         <Description/>
         <Products/>
+        <EveryThing/>
         <Footer/>
         <Footer2/>
     </div>
