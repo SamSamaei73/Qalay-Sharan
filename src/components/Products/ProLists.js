@@ -37,7 +37,7 @@ const ProLists = () => {
             used in the manufacture of hot mix asphalt for bases and wearing
             courses.
           </h4>
-          <NavLink to="/ProductsPage" className="InfoProData" >
+          <NavLink to="/ProductsPage/1" className="InfoProData" >
             Read More
           </NavLink>
         </div>
@@ -52,7 +52,9 @@ const ProLists = () => {
             superior properties. This grade of Bitumen is mainly used in the
             manufacture of hot mix asphalt for bases and wearing courses.
           </h4>
-          <button>Read More</button>
+          <NavLink to="/ProductsPage/2" className="InfoProData" >
+            Read More
+          </NavLink>
         </div>
 
         <div className="Box">
@@ -65,7 +67,9 @@ const ProLists = () => {
             the production of polymer modified bitumen/ asphalt (PMB/PMA) and in
             spraying and chip applications.
           </h4>
-          <button>Read More</button>
+          <NavLink to="/ProductsPage/3" className="InfoProData" >
+            Read More
+          </NavLink>
         </div>
 
         <div className="Box">
@@ -78,7 +82,9 @@ const ProLists = () => {
             superior properties. This grade of Bitumen is mainly used in the
             manufacture of hot mix asphalt for bases and wearing courses
           </h4>
-          <button>Read More</button>
+          <NavLink to="/ProductsPage/4" className="InfoProData" >
+            Read More
+          </NavLink>
         </div>
 
         <div className="Box">
@@ -90,7 +96,9 @@ const ProLists = () => {
             bitumen production. This kind of bitumen is suitable to be used in
             cold regions.
           </h4>
-          <button>Read More</button>
+          <NavLink to="/ProductsPage/5" className="InfoProData" >
+            Read More
+          </NavLink>
         </div>
 
       

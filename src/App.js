@@ -44,7 +44,7 @@ function App() {
               <Route exact path="/" element={<Firstpage />} />
               <Route exact path="/AboutUs" element={<AboutUs />} />
               <Route exact path="/Products" element={<Products />} />
-              <Route exact path="/ProductsPage" element={<ProductsPage />} />
+              <Route exact path="/ProductsPage/:Id" element={<ProductsPage />} />
               <Route exact path="/Login" element={<Login />} />
               <Route exact path="/Cpanel" element={<Cpanel />} />
               <Route exact path="/TableProduct" element={<TableProduct />} />

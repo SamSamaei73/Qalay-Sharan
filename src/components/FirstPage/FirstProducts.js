@@ -8,6 +8,7 @@ import Photo2 from "../../img/5070.jpeg";
 import Photo3 from "../../img/6070.jpeg";
 import Photo4 from "../../img/70100.jpeg";
 import Photo5 from "../../img/80100.jpeg";
+import { NavLink } from "react-router-dom";
 
 const FirstProducts = () => {
   const { ref } = useSlider({
@@ -44,7 +45,9 @@ const FirstProducts = () => {
                 grade of Bitumen is mainly used in the manufacture of hot mix
                 asphalt for bases and wearing courses.
               </h4>
-              <button>Read more</button>
+              <NavLink to="/ProductsPage/1" className="SliderReadMore">
+                Read More
+              </NavLink>
             </div>
           </div>
 
@@ -61,7 +64,9 @@ const FirstProducts = () => {
                 superior properties. This grade of Bitumen is mainly used in the
                 manufacture of hot mix asphalt for bases and wearing courses.
               </h4>
-              <button>Read more</button>
+              <NavLink to="/ProductsPage/2" className="SliderReadMore">
+                Read More
+              </NavLink>{" "}
             </div>
           </div>
 
@@ -78,7 +83,9 @@ const FirstProducts = () => {
                 in the production of polymer modified bitumen/ asphalt (PMB/PMA)
                 and in spraying and chip applications.
               </h4>
-              <button>Read more</button>
+              <NavLink to="/ProductsPage/3" className="SliderReadMore">
+                Read More
+              </NavLink>{" "}
             </div>
           </div>
 
@@ -95,7 +102,9 @@ const FirstProducts = () => {
                 superior properties. This grade of Bitumen is mainly used in the
                 manufacture of hot mix asphalt for bases and wearing courses
               </h4>
-              <button>Read more</button>
+              <NavLink to="/ProductsPage/4" className="SliderReadMore">
+                Read More
+              </NavLink>{" "}
             </div>
           </div>
 
@@ -111,12 +120,11 @@ const FirstProducts = () => {
                 cutback bitumen production. This kind of bitumen is suitable to
                 be used in cold regions.
               </h4>
-              <button>Read more</button>
+              <NavLink to="/ProductsPage/5" className="SliderReadMore">
+                Read More
+              </NavLink>{" "}
             </div>
           </div>
-
-     
-    
         </div>
       </div>
     </div>
